@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Main {
-	private static final String password = "123";
+	private static final String password = System.getenv("APP_PASSWORD");
 	private static final Logger logger = Logger.getLogger(Main.class.getName());
 
 	public int add(int a, int b) {
